@@ -1,54 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Harry Rodriguez Huarcaya">
-    <meta name="description" content="Bienvenido a mi portafolio">
-    <meta name="keywords" content="Harry">
-    <title>HRH</title>
-    <link rel="shortcut icon" href="assets/img/pngwing.com (2).png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src=""></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Harry Rodríguez Huarcaya">
+  <meta name="description" content="Bienvenido a mi portafolio">
+  <meta name="keywords" content="desarollador web, Harry, programador">
+  <meta name="theme-color" content="#09f" />
+  <meta name="view-transition" content="same-origin">
+  <title>H.R.H</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" href="./src/img/icons8-ojo-64.png" type="image/x-icon">
+  <link rel="stylesheet" href="src/css/style.css">
+  <script src=""></script>
 </head>
 <body>
-    <header>
-        <div class="primero">
-            <h1><i class="fa-sharp-duotone fa-solid fa-book fa-beat"></i>Harry</h1>
-            <nav class="segundo">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Project</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
+  <header>
+    <nav class="navegador">
+      <div class="logo"><a href=""><i class='bx bx-library'></i></a></div>
+      <div class="navegador1">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mí">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contactos">Contactos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="inicio" class="presentación">
+      <div>
+        <h2>Soy</h2>
+        <h2>Harry</h2>
+        <h2>Programador Full-Stack</h2>
+        <div>
+          <ul>
+            <li><a href=""><i class='bx bxl-github' style='color:#ffffff' ></i></a></li>
+            <li><a href=""><i class='bx bxl-linkedin-square' style='color:#ffffff'></i></a></li>
+            <li><a href=""><i class='bx bxl-gmail' style='color:#ffffff' ></i></a></li>
+          </ul>
         </div>
-    </header>
-    <main>
-        <section class="entrada">
-            <div class="inicio">
-                <img class="primera-imagen" src="assets/img/traje.png" alt="Hombre con traje">
-                <div class="detalles">
-                    <h2>Hola, soy Harry</h2>
-                    <hr>
-                    <p>Soy un programador</p>
-                    <ul class="enlances">
-                        <li><a class="enlace" href=""></a><i class="fa-brands fa-github"></i></li>
-                        <li><a class="enlace" href=""></a><i class="fa-brands fa-linkedin"></i></li>
-                        <li><a class="enlace" href=""></a><i class="fa-brands fa-whatsapp"></i></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="cuerpo">
-            <h2>MI VIDA</h2>
-            <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quibusdam reiciendis eveniet sequi molestiae tempora repellendus perferendis quos dolores, blanditiis similique! Quibusdam cum animi dolorum aut, eaque magni pariatur unde.</p>
-            </article>            
-        </section>
-    </main>
-    <footer></footer>
+        <div class="contactame"><a href=""><h2>Contactame</h2></a></div>
+      </div>
+      <div class="imagen">
+        <img src="src/img/logo2.png" alt="imagen de portada">
+      </div>
+    </section>
+    <section id="sobre-mí" class="sobremi">
+      <div class="sobremi1">
+        <h2>Acerca de mí</h2>
+        <p>Me dedico a crear soluciones digitales mediante el desarrollo de software. Utilizo lenguajes de programación para construir aplicaciones, páginas web, APIs o sistemas que resuelven problemas del mundo real. Como programador, combino lógica, creatividad y tecnología para diseñar, codificar, probar y mantener proyectos funcionales y eficientes. Siempre estoy aprendiendo nuevas herramientas para adaptarme a los cambios constantes del mundo digital. </p>
+      </div>
+      <div class="imagenes">
+        <img src="src/img/html-css-js.png" alt="imagen de javascript">
+      </div>
+    </section>
+    <section id="proyectos" class="proyect">
+      <h2 class="titulo">Proyectos</h2>
+      <iframe src="src/html/proyecto.html" ></iframe>
+    </section>
+    <section id="contactos" class="contact">
+      <div class="contact1">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta, propuesta o simplemente quieres saludar, no dudes en escribirme. Estoy abierto a nuevas oportunidades, colaboraciones y retos interesantes. ¡Tu mensaje será bien recibido!</p>
+        <a href=""><i class='bx bx-phone'> 946-000-608</i></a>
+        <a href=""><i class='bx bxl-gmail'> harrymusicx14@gmail.com</i></a>
+        <a href=""><i class='bx bxl-linkedin-square'> Linkedin</i></a>
+      </div>
+      <form action="https://formspree.io/f/xqalbvpz" autocomplete="off" method="post" target="_blank">
+        <input type="text" name="name" placeholder="Ingresa tu nombre" class="campo">
+        <input type="email" name="email" placeholder="Ingresa tu email" class="campo">
+        <textarea name="mensaje" placeholder="Ingresa tu mensaje" class="campo"></textarea>
+        <input type="submit" class="boton">
+      </form>
+    </section>
+  </main>
+  <aside></aside>
+  <footer>
+  </footer>
 </body>
 </html>

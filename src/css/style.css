@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+/* Navegador */
+.navegador {
+  position: fixed;
+  width: 100%;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .logo {
+    font-size: x-large;
+  }
+}
+
+.navegador1 {
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+  }
+}
+
+/* Main */
+
+/* Inicio */
+
+.presentación {
+  background-image: url(../img/git.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 10px;
+  background-color: black;
+  color: white;
+  min-height: 100vh ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    font-size:xx-large;
+  };
+  a {
+    text-decoration: none;
+  };
+  .imagen {
+    width: auto;
+    height: auto;
+    img {
+      width: 30rem;
+    }
+  }
+  .contactame {
+    h2 {
+      color: white;
+    }
+  }
+}
+
+
+/* Sobre mí */
+
+.sobremi{
+  background-color: #2b2a2a;
+  color: white;
+  min-height: 100vh ;
+  padding-top: 80px;
+  .sobremi1 {
+    h2 {
+      display: grid;
+      text-align: center;
+      padding-bottom: 30px;
+      font-size: 3rem
+    };
+    p {
+      display: flex;
+      text-align: center;
+      padding-bottom: 5rem;
+      font-size: 30px;
+    }
+  };
+  .imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; 
+    img {
+      width: 75rem;
+    }
+  }
+}
+
+/* Proyectos */
+
+/* index */
+.proyect {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  .titulo{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  };
+  iframe {
+    width: 80%;
+    height: 700px;
+    border: none;
+    border-radius: 30px;
+  }
+}
+
+/* proyecto */
+
+.principal {
+  background-color: #1e1e1e;
+  .proyectos1 {
+    display: grid;
+    gap: 4rem;
+    padding: 3rem;
+    justify-items: center;
+    align-items: center;
+    .proyecto1, .proyecto2, .proyecto3 {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      width: 100%;
+    };
+    img {
+      width: 40rem;
+      height: auto;
+      border-radius: 8px;
+    };
+    h2, p {
+      padding-left: 5rem ;
+    }
+
+  }
+
+}
+
+
+
+/* Contactos */
+
+.contact {
+  background-color: black;
+  padding-top: 5rem;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; 
+
+   .contact1 {
+    display: flex; 
+    flex-direction: column;
+    padding: 50px;
+    width: 50%;
+    font-size: 30px;
+  }
+  form {
+    padding-left: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2, p {
+      margin-bottom: 1.5rem; 
+    }
+
+  a {
+      display: flex;
+      font-size: 20px;
+      margin-bottom: 1rem; 
+    }
+  .campo{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    width: 40rem;
+    background-color: #222;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: white;
+  }
+  .campo:hover {
+    background-color: #100e6d;
+    transform: scale(1.05);
+  }
+  textarea {
+    height: 10rem;
+    color: white;
+  }
+  
+  .boton {
+    padding: 0.8rem 2rem;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+.boton:hover {
+    background-color: #100e6d;
+    transform: scale(1.05);
+  }
+}
