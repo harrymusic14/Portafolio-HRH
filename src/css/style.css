@@ -78,6 +78,9 @@ body {
 /* Sobre mí */
 
 .sobremi{
+  background-image: url(../img/triangulo.jpg);
+  
+  background-size: cover;
   background-color: #2b2a2a;
   color: white;
   min-height: 100vh ;
@@ -114,6 +117,7 @@ body {
 
 /* index */
 .proyect {
+  background-image: url(../img/tecnologia.jpg);
   background-color: black;
   color: white;
   min-height: 100vh;
@@ -175,6 +179,11 @@ body {
 /* Contactos */
 
 .contact {
+  background-image: url(../img/hexagonales.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  min-height: 100vh; 
   background-color: black;
   padding-top: 5rem;
   color: white;
