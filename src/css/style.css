@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🌟 Adaptación de pantalla */
+html {
+  font-size: 16px;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  overflow-x: hidden; /* evita scroll horizontal en móviles */
+  background-color: black;
+  color: white;
+}
+
+/* 🖥 Escritorio grande */
+.presentación {
+  display: flex;
+  gap: 15rem;
+}
+
+/* 📱 Tablet */
+@media (max-width: 1024px) {
+  .presentación {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+  .sobremi p {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+  .imagenes {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .imagenes img {
+    width: 8rem;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  .contact1, form {
+    width: 100%;
+    padding: 1rem;
+  }
+  .campo {
+    width: 100%;
+  }
+}
+
+/* 📱 Móvil grande */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .presentación {
+    gap: 2rem;
+  }
+  .presentación img {
+    width: 15rem;
+  }
+  .proyect iframe {
+    height: 400px;
+  }
+  .proyectos1 img {
+    width: 100%;
+  }
+}
+
+/* 📱 Móvil pequeño */
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  .presentación h2 {
+    font-size: 1.5rem;
+  }
+  .imagenes img {
+    width: 6rem;
+  }
+  .proyect iframe {
+    height: 300px;
+  }
+  .campo {
+    width: 100%;
+  }
+}
+
+/* Navegador */
+.navegador {
+  position: fixed;
+  width: 100%;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .logo {
+    font-size: x-large;
+  }
+}
+
+.navegador1 {
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+  }
+}
+
+/* Inicio */
+.presentación {
+  background-image: url(../img/git.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 10px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    font-size: xx-large;
+  }
+  a {
+    text-decoration: none;
+  }
+  .imagen img {
+    width: 30rem;
+  }
+  .contactame h2 {
+    color: white;
+  }
+}
+
+/* Sobre mí */
+.sobremi {
+  background-image: url(../img/triangulo.jpg);
+  background-size: cover;
+  background-color: #2b2a2a;
+  color: white;
+  min-height: 100vh;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.sobremi .sobremi1 h2 {
+  font-size: 3rem;
+  padding-bottom: 30px;
+}
+
+.sobremi .sobremi1 p {
+  margin: 0 auto 2rem;
+  font-size: 25px;
+  max-width: 100ch;   
+  text-align: justify;
+  line-height: 1.6;
+}
+.sobremi .imagenes {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 3rem;
+}
+
+.sobremi .imagenes h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.imagenes-frontend,
+.imagenes-backend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; 
+}
+
+.imagenes-frontend img,
+.imagenes-backend img {
+  width: 8rem;
+}
+
+.logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem; 
+  transition: transform 0.3s ease, filter 0.3s ease;
+
+  img {
+    width: 10rem; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  p {
+    font-size: 1.2rem; 
+    color: #fff;
+    text-align: center;
+  }
+
+  &:hover {
+    transform: scale(1.08);
+    filter: brightness(1.2);
+
+    img {
+      transform: scale(1.15);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+/* Proyectos */
+.proyect {
+  background-image: url(../img/tecnologia.jpg);
+  background-color: black;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 2rem;
+
+  .titulo {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 100px;
+  }
+  iframe {
+    width: 80%;
+    height: 700px;
+    border: none;
+    border-radius: 30px;
+  }
+}
+
+.principal {
+  background-color: #1e1e1e;
+  .proyectos1 {
+    display: grid;
+    gap: 4rem;
+    padding: 3rem;
+    justify-items: center;
+    img {
+          width: 40rem;
+          max-width: 100%;
+          border-radius: 8px;
+          display: block;       
+          margin: 0 auto;       
+          margin-bottom: 2rem;    
+        }
+    
+    h2, p, h3, ul {
+      margin-bottom: 0.8rem;
+      padding-left: 5rem;
+      ul, li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .link {
+        color: red;       
+        font-weight: bold; 
+        text-decoration: underline;
+        font-size: 20px;   
+      }
+    }
+  }
+}
+
+/* Contactos */
+.contact {
+  background-image: url(../img/hexagonales.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  .contact1 {
+    flex-direction: column;
+    padding: 50px;
+    width: 50%;
+    font-size: 30px;
+    ul {
+      list-style: none;
+    }
+  }
+  form {
+    padding: 50px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  h2, p {
+    margin-bottom: 1.5rem;
+  }
+  a {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  .campo {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: 20px;
+    width: 40rem;
+    max-width: 100%;
+    background-color: #222;
+    font-size: 1.1rem;
+    color: white;
+  }
+  .campo:hover {
+    background-color: #100e6d;
+    transform: scale(1.05);
+  }
+  textarea {
+    height: 10rem;
+    color: white;
+  }
+  .boton {
+    padding: 0.8rem 2rem;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .boton:hover {
+    background-color: #100e6d;
+    transform: scale(1.05);
+  }
+}
